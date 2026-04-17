@@ -29,7 +29,7 @@ async def get_geojson():
     features = [{
         "type": "Feature",
         "geometry": json.loads(r["geom"]),
-        "properties": {"id": r["id"], "nama": r["nama"], "jenis": r["jenis"]}
+        "properties": {"id": r["id"], "nama": r["nama"], "jenis": r["jenis"], "alamat": r["alamat"]}
     } for r in rows]
     return {"type": "FeatureCollection", "features": features}
 
