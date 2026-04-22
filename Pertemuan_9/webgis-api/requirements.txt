@@ -1,0 +1,20 @@
+# WebGIS API — Backend Dependencies
+# Install: pip install -r requirements.txt
+
+# === Web Framework ===
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+
+# === Database (PostgreSQL async) ===
+asyncpg>=0.29.0
+
+# === Authentication ===
+python-jose[cryptography]>=3.3.0   # JWT encode/decode
+passlib[bcrypt]>=1.7.4             # Password hashing (bcrypt)
+python-multipart>=0.0.9            # Form data parsing (OAuth2PasswordRequestForm)
+
+# === Data Validation ===
+pydantic>=2.0.0                    # Sudah termasuk di FastAPI
+
+# === Configuration ===
+python-dotenv>=1.0.0               # Load .env file
